@@ -1,0 +1,10 @@
+<div class="row">
+    <%= form_for @conn, page_path(@conn, :authorize), [as: :form], fn f -> %>
+    <label>
+        consumer key: <%= text_input f, :consumer_key %>
+    </label>
+    <%= submit "Submit" %>
+    <% end %>
+
+    get yous from <a target="_blank" href="https://getpocket.com/developer/apps/">your apps page</a>
+</div>
